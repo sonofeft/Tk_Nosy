@@ -33,7 +33,9 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/pypa/tk_nosy',
+    url='http://tk-nosy.readthedocs.org/en/latest/',
+    download_url='https://github.com/sonofeft/Tk_Nosy',    
+    
 
     # Author details
     author='Charlie Taylor',
