@@ -12,21 +12,5 @@ python 2 and python 3 conventions can both be monitored at the same time.
 
 In addition to conventional CPython, PYPY is also acceptable.
 
-A project layout such as that shown below is typical for Tk_Nosy to monitor::
-
-    MyProject/
-        myproject/
-            __init__.py
-            mycode.py
-        docs/
-        tests/
-            __init__.py
-            test_mycode.py
-        LICENSE.txt
-        MANIFEST.in
-        README.rst
-        requirements.txt
-        setup.cfg
-        setup.py
-        tox.ini
-        
+See the Code at: `<https://github.com/sonofeft/Tk_Nosy>_
+See the Docs at: `<http://tk-nosy.readthedocs.org/en/latest/>_
