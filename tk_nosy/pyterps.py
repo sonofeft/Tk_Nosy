@@ -63,7 +63,7 @@ def get_nose_version_info( python_full_exe_path ):
     
     cmdL = [python_full_exe_path, '-c', GET_NOSE_VERSION_CODE]
     #print( 'cmd =',cmd )
-    proc = subprocess.Popen(cmdL, shell=True,
+    proc = subprocess.Popen(cmdL, shell=False,
                              stdin=subprocess.PIPE,
                              stdout=subprocess.PIPE,
                              stderr=subprocess.PIPE)
@@ -138,7 +138,7 @@ def get_py_version_info( python_full_exe_path ):
     
     cmdL = [python_full_exe_path, '-c', GET_PY_VERSION_CODE]
     #print( 'cmd =',cmd )
-    proc = subprocess.Popen(cmdL, shell=True,
+    proc = subprocess.Popen(cmdL, shell=False,
                              stdin=subprocess.PIPE,
                              stdout=subprocess.PIPE,
                              stderr=subprocess.PIPE)
@@ -147,6 +147,9 @@ def get_py_version_info( python_full_exe_path ):
     
     if py_info:
         try:
+            py_info = py_info.decode()
+            #print('py_info=',py_info)
+            #print('type(py_info) =',type(py_info))
             py_major, py_minor, py_micro, py_exe_fullpath = py_info.split(',')
             return  py_major, py_minor, py_micro, py_exe_fullpath
         except Exception:
@@ -203,7 +206,8 @@ class PyInterpsOnSys(object):
             dirL = glob.glob('/usr/bin/pypy*')
         for pydir in dirL:
             if not pydir.endswith("m"):
-                self.add_interp( pydir )
+                if not os.path.split(pydir)[-1].startswith('pypyc'):
+                    self.add_interp( pydir )
 
 
         # There might be other search directories
@@ -314,7 +318,7 @@ if __name__ == '__main__':
     C = PyInterpsOnSys()# extra_search_dirL=[r'D:\TOX'] )
     #for PI in C.interpL:
     #    print( PI )
-    C.add_interp( r'D:\TOX\pypy-2.6.0-win32\pypy.exe' )
+    #C.add_interp( r'D:\TOX\pypy-2.6.0-win32\pypy.exe' )
 
     print( '='*55 )
     print( C )

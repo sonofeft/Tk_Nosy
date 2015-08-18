@@ -29,6 +29,7 @@ sys.path.append(os.path.abspath("../"))
 from tk_nosy.main_gui import Tk_Nosy
 from tk_nosy.pyterps import PyInterpsOnSys
 from tkinter import Tk
+from tkinter import Toplevel
 
 
 class MyTest(unittest.TestCase):
@@ -51,6 +52,14 @@ class MyTest(unittest.TestCase):
 
         # See if the self.myclass object exists
         self.assertTrue(result)
+        
+    #def test_Tk_creation(self):
+    #    """Check that a Tk_Nosy object can be created"""
+    #    root = Tk()
+    #    result = Tk_Nosy(root)
+
+    #    # See if the Tk_Nosy object exists
+    #    self.assertTrue(result)
 
 
 if __name__ == '__main__':
