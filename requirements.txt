@@ -1,4 +1,4 @@
 future
 nose
-tk
+python-tk
 coverage

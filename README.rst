@@ -13,4 +13,5 @@ python 2 and python 3 conventions can both be monitored at the same time.
 In addition to conventional CPython, PYPY is also acceptable.
 
 See the Code at: `<https://github.com/sonofeft/Tk_Nosy>`_
+
 See the Docs at: `<http://tk-nosy.readthedocs.org/en/latest/>`_
