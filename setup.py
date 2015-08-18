@@ -92,7 +92,7 @@ setup(
     #    "quantum-gravity>=1.0",
     #    "unobtanium>=0.4",
     #],
-    install_requires=['future','nose','coverage','tk'],
+    install_requires=['future','nose','coverage'],
 
     tests_require=['nose'],
 

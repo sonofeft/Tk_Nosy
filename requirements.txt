@@ -1,3 +1,4 @@
 future
 nose
 coverage
+tkinter-pypy ; python == 'pypy'
