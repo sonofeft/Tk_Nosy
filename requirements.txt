@@ -1,4 +1,3 @@
 future
 nose
 coverage
-tkinter-pypy ; python_version == 'pypy'
