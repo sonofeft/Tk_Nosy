@@ -1,6 +1,10 @@
 
 .. Tk_Nosy
 
+
+.. image:: https://travis-ci.org/sonofeft/Tk_Nosy.svg?branch=master
+    :target: https://travis-ci.org/sonofeft/Tk_Nosy
+
 Tk_Nosy Overview
 ================
 
