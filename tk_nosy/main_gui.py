@@ -56,7 +56,7 @@ under certain conditions.
 __author__ = 'Charlie Taylor'
 __copyright__ = 'Copyright (c) 2013 Charlie Taylor'
 __license__ = 'GPL-3'  # see file LICENSE.TXT
-__version__ = '1.0'
+__version__ = '0.1.3'  # METADATA_RESET:__version__ = '<<version>>'
 __email__ = "charlietaylor@users.sourceforge.net"
 __status__ = "Development"  # "Prototype", "Development", or "Production"
 

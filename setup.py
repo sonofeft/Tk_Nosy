@@ -27,7 +27,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version = '0.1.1',  # METADATA_RESET:    version = '<<version>>',
+    version = '0.1.3',  # METADATA_RESET:    version = '<<version>>',
 
     description='Tk_Nosy monitors project and unittest files and runs nosetests when they change.',
     long_description=long_description,

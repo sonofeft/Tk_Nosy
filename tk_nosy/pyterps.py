@@ -43,7 +43,7 @@ from __future__ import print_function
 __author__ = 'Charlie Taylor'
 __copyright__ = 'Copyright (c) 2015 Charlie Taylor'
 __license__ = 'GPL-3'
-__version__ = '0.1.1' #Versioning: http://www.python.org/dev/peps/pep-0386/
+__version__ = '0.1.3'  # METADATA_RESET:__version__ = '<<version>>'
 __email__ = "cet@appliedpython.com"
 __status__ = "Development" # "Prototype", "Development", or "Production"
 
