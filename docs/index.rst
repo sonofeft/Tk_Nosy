@@ -14,7 +14,8 @@ The goal of Tk_Nosy is to encourage unit testing. This helps a developer use
 Test Driven Development (TDD) regardless of the editor or IDE being used.
 
 Tk_Nosy will run nosetests with any python interpreter when any files
-under development change.  
+under development change.  In addition to conventional CPython, PYPY is also acceptable.
+
 
 It can run any number of python interpreters concurrently such that, for example, 
 python 2 and python 3 conventions can both be monitored at the same time. 
@@ -23,7 +24,6 @@ The image below shows concurrent nosetests for pypy as well as standard CPython 
 .. image:: _static/watch_3_py.png
     :width: 40%
 
-In addition to conventional CPython, PYPY is also acceptable.
 
 A project layout such as that shown below is typical for Tk_Nosy to monitor::
 
