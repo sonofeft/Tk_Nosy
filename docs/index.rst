@@ -17,7 +17,11 @@ Tk_Nosy will run nosetests with any python interpreter when any files
 under development change.  
 
 It can run any number of python interpreters concurrently such that, for example, 
-python 2 and python 3 conventions can both be monitored at the same time.
+python 2 and python 3 conventions can both be monitored at the same time. 
+The image below shows concurrent nosetests for both python 2.7.9 and 3.4.3.
+
+.. image:: _static/watch_2_py.png
+    :width: 50%
 
 In addition to conventional CPython, PYPY is also acceptable.
 
