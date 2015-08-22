@@ -24,8 +24,13 @@ for more assert options
 """
 
 import sys, os
-sys.path.append(os.path.abspath("."))
-sys.path.append(os.path.abspath("../"))
+here = os.path.abspath(os.path.dirname(__file__))
+up_one = os.path.split( here )[0]  # Needed to find tk_nosy development version
+if here not in sys.path[:3]:
+    sys.path.insert(0, here)
+if up_one not in sys.path[:3]:
+    sys.path.insert(0, up_one)
+
 from tk_nosy.main_gui import Tk_Nosy
 from tk_nosy.pyterps import PyInterpsOnSys
 from tkinter import Tk

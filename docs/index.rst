@@ -44,66 +44,13 @@ A project layout such as that shown below is typical for Tk_Nosy to monitor::
         tk_nosy.py
         tox.ini
 
-Install
-=======
-
-The easiest way to install Tk_Nosy is::
-
-    pip install tk_nosy
-
-Installation From Source
-========================
-
-Much less common, but if installing from source, then
-the best way to install Tk_Nosy is to use pip after navigating to the directory holding Tk_Nosy::
-
-    cd full/path/to/Tk_Nosy
-    pip install -e .
-    
-        OR on Linux
-    sudo pip install -e .
-        OR perhaps
-    pip install --user -e .
-    
-This will execute the local ``setup.py`` file and insure that the pip-specific commands in ``setup.py`` are run.
-
-Running Tk_Nosy
-===============
-
-After installing with pip, there will be a launch command line program called **tk_nosy** or, on Windows, **tk_nosy.exe**.
-
-The path for the tk_nosy executable might be something like::
-
-    /usr/local/bin/tk_nosy          (if installed with sudo pip install -e .)
-      or 
-    /home/<user>/.local/bin/tk_nosy (if installed with pip install -e .)
-      or 
-    C:\Python27\Scripts\tk_nosy.exe (on Windows)
-
-Make sure your system path includes the above path to **tk_nosy**.
-
-The best way to run Tk_Nosy is to use the command line to navigate to the directory being developed and simply type::
-
-    cd <path to my project>
-    tk_nosy
-    
-      or without cd command 
-      
-    tk_nosy <path to my project>
-    
-If tk_nosy detects a project in the local directory, it will launch nosetests, show results and start watching python files for changes.  If there is no project detected, it will ask for a directory to watch.
-
-It is possible to run Tk_Nosy directly from source without installing it. Simply navigate to the source files and type::
-
-    python main_gui.py
-      or
-    python main_gui.py <name of directory to watch>
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   quickstart 
    tdd 
    functions
 

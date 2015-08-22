@@ -21,6 +21,9 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
+with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f2:
+    requires = f2.read().strip().splitlines()
+
 setup(
     name='tk_nosy',
 
@@ -85,12 +88,8 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    #install_requires=[
-    #    "requests>=1.0",
-    #    "quantum-gravity>=1.0",
-    #    "unobtanium>=0.4",
-    #],
-    install_requires=['future','nose','coverage'],
+    #install_requires = ["future","nose","coverage"], 
+    install_requires =  requires,  # read from requirements.txt
 
     tests_require=['nose'],
 
