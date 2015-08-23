@@ -113,7 +113,7 @@ I've sometimes had issues with pip failing on Linux with a message like::
             or    
     Cannot fetch index base URL https://pypi.python.org/simple/
 
-Certain Python platforms (specifically, versions of Python earlier than 2.7.9) have the InsecurePlatformWarning. If you encounter this warning, it is strongly recommended you upgrade to a newer Python version, or that you use pyOpenSSL as described in the OpenSSL / PyOpenSSL section.    
+Certain Python platforms (specifically, versions of Python earlier than 2.7.9) have the InsecurePlatformWarning. If you encounter this warning, it is strongly recommended you upgrade to a newer Python version, or that you use pyOpenSSL.    
 
 Also ``pip`` may be mis-configured and point to the wrong PyPI repository.
 You need to fix this global problem with ``pip`` just to make python usable on your system.
