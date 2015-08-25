@@ -2,8 +2,17 @@
 .. Tk_Nosy
 
 
-.. image:: https://travis-ci.org/sonofeft/Tk_Nosy.svg?branch=master
-    :target: https://travis-ci.org/sonofeft/Tk_Nosy
+.. image:: https://img.shields.io/travis/sonofeft/Tk_Nosy.svg
+        :target: https://travis-ci.org/sonofeft/Tk_Nosy
+
+.. image:: https://img.shields.io/pypi/v/Tk_Nosy.svg
+    :target: https://pypi.python.org/pypi/tk_nosy
+        
+.. image:: https://img.shields.io/pypi/pyversions/Tk_Nosy.svg
+    :target: https://wiki.python.org/moin/Python2orPython3
+
+.. image:: https://img.shields.io/pypi/l/Tk_Nosy.svg
+    :target: https://pypi.python.org/pypi/tk_nosy
 
 Tk_Nosy Overview
 ================
@@ -25,6 +34,12 @@ The image below shows concurrent nosetests for pypy as well as standard CPython 
     :width: 45%
 .. image:: _static/watch_3_py_linux.png
     :width: 40%
+
+See the Code at: `<https://github.com/sonofeft/Tk_Nosy>`_
+
+See the Docs at: `<http://tk_nosy.readthedocs.org/en/latest/>`_
+
+See PyPI page at:`<https://pypi.python.org/pypi/tk_nosy>`_
 
 
 A project layout such as that shown below is typical for Tk_Nosy to monitor::
