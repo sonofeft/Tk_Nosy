@@ -56,7 +56,7 @@ under certain conditions.
 __author__ = 'Charlie Taylor'
 __copyright__ = 'Copyright (c) 2013 Charlie Taylor'
 __license__ = 'GPL-3'  # see file LICENSE.TXT
-__version__ = '0.1.4'  # METADATA_RESET:__version__ = '<<version>>'
+__version__ = '0.1.5'  # METADATA_RESET:__version__ = '<<version>>'
 __email__ = "charlietaylor@users.sourceforge.net"
 __status__ = "Development"  # "Prototype", "Development", or "Production"
 
@@ -224,11 +224,11 @@ class Tk_Nosy(object):
 
         disp_Choices = Menu(self.menuBar, tearoff=0)
         self.display_test_details = StringVar()
-        self.display_test_details.set('Y')
+        self.display_test_details.set('N')
         disp_Choices.add_checkbutton(label='Display Test Details', variable=self.display_test_details, onvalue='Y', offvalue='N')
         
         self.display_watched_files = StringVar()
-        self.display_watched_files.set('Y')
+        self.display_watched_files.set('N')
         disp_Choices.add_checkbutton(label='Show Watched Files', variable=self.display_watched_files, onvalue='Y', offvalue='N')
         self.menuBar.add("cascade", label="Display", menu=disp_Choices)
                           
