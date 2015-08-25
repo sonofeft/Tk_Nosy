@@ -19,9 +19,11 @@ under development change.  In addition to conventional CPython, PYPY is also acc
 
 It can run any number of python interpreters concurrently such that, for example, 
 python 2 and python 3 conventions can both be monitored at the same time. 
-The image below shows concurrent nosetests for pypy as well as standard CPython python 2.7.9 and 3.4.3.
+The image below shows concurrent nosetests for pypy as well as standard CPython python 2.7.9 and 3.4.3 running on both **Windows and Linux**.
 
 .. image:: _static/watch_3_py.png
+    :width: 45%
+.. image:: _static/watch_3_py_linux.png
     :width: 40%
 
 

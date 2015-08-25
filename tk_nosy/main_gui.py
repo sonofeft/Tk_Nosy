@@ -56,7 +56,7 @@ under certain conditions.
 __author__ = 'Charlie Taylor'
 __copyright__ = 'Copyright (c) 2013 Charlie Taylor'
 __license__ = 'GPL-3'  # see file LICENSE.TXT
-__version__ = '0.1.3'  # METADATA_RESET:__version__ = '<<version>>'
+__version__ = '0.1.4'  # METADATA_RESET:__version__ = '<<version>>'
 __email__ = "charlietaylor@users.sourceforge.net"
 __status__ = "Development"  # "Prototype", "Development", or "Production"
 
@@ -686,12 +686,12 @@ class Tk_Nosy(object):
 
         pad = '|'*self.oscillator
 
-        s = '%s %s'%(self.defaultPyInterp.exe_name, self.defaultPyInterp.version_str)
+        s = '%s (v%s)'%(self.defaultPyInterp.exe_name, self.defaultPyInterp.version_str)
 
         self.master.title('%i) %s '%(self.numNosyCalls , s + pad ))
 
         for PI,Popup in Tk_Nosy.concurrent_versionL:
-            s = '%s %s'%(PI.exe_name, PI.version_str)
+            s = '%s (v%s)'%(PI.exe_name, PI.version_str)
             Popup.title( '%i) %s '%(self.numNosyCalls , s + pad ) )
 
 
