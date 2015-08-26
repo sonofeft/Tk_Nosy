@@ -16,7 +16,7 @@ on Linux you might have to try::
     sudo apt-get install python-tk
     sudo apt-get install python3-tk
     
-In order to get tkinter/Tkinter for python 2 & 3.
+In order to get Tkinter/tkinter for python 2 & 3.
 
 You can test the installation from a terminal window with::
 

@@ -1,3 +1,9 @@
+commit ebc21407dfb07d625b7827065e130c7fb463fe3e
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Wed Aug 26 09:23:55 2015 -0700
+
+    Added HISTORY.rst
+
 commit 6639097cb441f9db5d93cf946a11e6bf7c8f5257
 Author: sonofeft <ctatsourceforge@gmail.com>
 Date:   Tue Aug 25 00:57:53 2015 -0700

@@ -6,6 +6,9 @@ History
 GitHub Log
 ----------
 
+* Aug 26, 2015
+    - (by: sonofeft) 
+        - Added HISTORY.rst
 * Aug 25, 2015
     - (by: sonofeft) 
         - added generic img shields
