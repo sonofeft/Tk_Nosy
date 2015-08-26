@@ -1,0 +1,140 @@
+commit 6639097cb441f9db5d93cf946a11e6bf7c8f5257
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Tue Aug 25 00:57:53 2015 -0700
+
+    added generic img shields
+
+commit 6c0e58474ff323376d61cdc46f37b125908828c5
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 24 23:43:19 2015 -0700
+
+    set new version number, fixed "python setup.py test"
+
+commit acfa370dd03a62be1cd2229bf5826a7c445bb545
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 24 17:29:46 2015 -0700
+
+    v0.1.4 cleaned up docs and GUI
+
+commit cb4f352334a80486f5dbf06117d7d65d574b9651
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Sat Aug 22 19:15:26 2015 -0700
+
+    docs update
+
+commit 72c9e947434a4d7d56c632cc8af595f494ea7e99
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Fri Aug 21 23:39:46 2015 -0700
+
+    Fixed docs quickstart
+
+commit 0b03408a431d9cff28ae07042d7c2f3d363e5aa2
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Fri Aug 21 23:35:51 2015 -0700
+
+    Added quickstart to docs and setup tweeks
+    
+    Made setup.py read the requirements.txt file for intall_requires list.
+    Also started a TODO list.
+
+commit 1ce1ae930d363cbca17bff4d4c362b479ffe5735
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Wed Aug 19 10:05:40 2015 -0700
+
+    some doc paragraph fixes
+
+commit f2d653139f912fa9b3967db355e30accd687a9b9
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Wed Aug 19 10:03:30 2015 -0700
+
+    show image of pypy, py27 and py34 concurrently
+
+commit 9333ab4e9c1dc86809acf4c7568f41641fa6823b
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Wed Aug 19 09:55:33 2015 -0700
+
+    Added image of concurrent python versions
+
+commit f76d82df90a4ec2f77b3f215482463fea32bcee5
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Tue Aug 18 17:50:12 2015 -0700
+
+    Version 0.1.3  Moved tests subdir below tk_nosy
+
+commit ea9fceec32a5f16ded9f0e0017b66f25f7fa8b43
+Author: sonofeft <charlie@sallyandcharlie.com>
+Date:   Tue Aug 18 15:45:20 2015 -0700
+
+    Fixed subprocess problem on Linux
+
+commit 44e4d06459f8cab60f81505340db08b1a9730d83
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 21:45:44 2015 -0700
+
+    Added TravisCI build status link
+
+commit 2897aaa0469c63ba50aceb4ca54c7b0b3ad1266a
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 21:33:41 2015 -0700
+
+    give up on pypy, just support py27, py33 and py34
+
+commit 427ca56538e8b781ef0a205a8efdac16bf03e2ef
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 21:30:01 2015 -0700
+
+    try pypy requirements.txt again
+
+commit 92b51b262e75602877fb71e00ce94d1aaca28500
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 21:28:08 2015 -0700
+
+    Try pypy flag in requirements.txt
+
+commit 8b8aa934a052591551eebcfbeab4236183469057
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 21:16:05 2015 -0700
+
+    try requirements.txt w/o tkinter
+
+commit 95104b971c8ac9a18726737243ece5552840bc97
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 21:05:53 2015 -0700
+
+    fixed tkinter import, needed python-tk
+
+commit ec8bd13dcd11e8a8ec752f0a56a4da5a788ae54f
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 15:01:31 2015 -0700
+
+    Fixed links in setup.py and README.rst
+
+commit 26a81760976844210e8e839f1cc575bce09d43fc
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 14:56:31 2015 -0700
+
+    Updated README to show links
+
+commit 577d6f62a89f1c1655d2b32bae74dd6b37d2801a
+Author: sonofeft <sonofeft@users.noreply.github.com>
+Date:   Mon Aug 17 14:24:26 2015 -0700
+
+    Delete README.md
+
+commit 3ecff63560f2d3f8d3582a4b67295f51a9252364
+Author: sonofeft <sonofeft@users.noreply.github.com>
+Date:   Mon Aug 17 13:40:57 2015 -0700
+
+    Delete LICENSE
+
+commit 36fab5c604a5054bf15822d72504ee0c1a1f453d
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Mon Aug 17 13:38:58 2015 -0700
+
+    First Draft of Tk_Nosy
+
+commit a1587d7261e4ad88b4b75c0014dc3c1ec1cea020
+Author: sonofeft <sonofeft@users.noreply.github.com>
+Date:   Mon Aug 17 13:08:11 2015 -0700
+
+    Initial commit

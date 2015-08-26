@@ -69,6 +69,7 @@ Contents:
 
    quickstart 
    tdd 
+   history
    functions
 
 
