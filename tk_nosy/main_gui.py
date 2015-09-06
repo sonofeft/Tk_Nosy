@@ -127,13 +127,13 @@ def run_nosetests(numNosyCalls, PI, display_test_details='Y'):
 
     xml_filename = 'nosetests_%s.xml'%PI.name().replace(' ','')
     #os.system (full_nosetests_name + ' --with-xunit  --xunit-file=%s'%xml_filename)
-    
+
     code = """import sys;from nose import run_exit;sys.exit(run_exit(argv=[ '', '--with-xunit', '--xunit-file=%s']))"""%xml_filename
-    
+
     cmd = '''%s -c "%s"'''%(PI.full_path, code)
 
     os.system ( cmd )
-    
+
 
     #print 'system_rtn = ',system_rtn
     #system_rtn = nose.run( argv=['nosetests', '-v', '--with-xunit'])
@@ -226,13 +226,13 @@ class Tk_Nosy(object):
         self.display_test_details = StringVar()
         self.display_test_details.set('N')
         disp_Choices.add_checkbutton(label='Display Test Details', variable=self.display_test_details, onvalue='Y', offvalue='N')
-        
+
         self.display_watched_files = StringVar()
         self.display_watched_files.set('N')
         disp_Choices.add_checkbutton(label='Show Watched Files', variable=self.display_watched_files, onvalue='Y', offvalue='N')
         self.menuBar.add("cascade", label="Display", menu=disp_Choices)
-                          
-                          
+
+
         py_choices = Menu(self.menuBar, tearoff=0)
         py_choices.add("command", label = "Change Python Version",
                           command = self.changePythonVersion)
@@ -246,7 +246,7 @@ class Tk_Nosy(object):
         #top_Snippet = Menu(self.menuBar, tearoff=0)
 
         self.menuBar.add("command", label = "Run", command = self.menu_Run)
-        
+
         self.display_test_details.trace("w", self.rerun_tests)
         self.display_watched_files.trace("w", self.rerun_tests)
 
@@ -412,15 +412,15 @@ class Tk_Nosy(object):
 
            Update GUI to show results.
         """
-        
+
         if PI.nose_version == None:
             # if nose was not installed last time we checked, check again
             PI.nose_version, err_msg = get_nose_version_info( PI.full_path )
             if PI.nose_version == None:
                 print( "\a" )  # make beep
                 s = 'Can not verify nose for:\nPython ' + PI.name()
-                tkwindow.Pass_Fail_Button.config(background='orange', 
-                                                  text=s, 
+                tkwindow.Pass_Fail_Button.config(background='orange',
+                                                  text=s,
                                                   font=self.arial_12_bold_font)
                 s = 'Please verify nose installed for:\n'+str(PI) +\
                     '\n\n' + err_msg+\
@@ -429,7 +429,7 @@ class Tk_Nosy(object):
                 tkwindow.Text_1.insert(END, s )
                 ShowError(title='Can not verify nose', message=s)
                 return
-        
+
         # pylint: disable=W0201
         passedAllTests, numPassed, numFailed, numErrors, numSkipped, outputTextL = \
             run_nosetests(self.numNosyCalls, PI, display_test_details=self.display_test_details.get())
@@ -484,7 +484,7 @@ class Tk_Nosy(object):
         num_lines += 3
 
         len_dirname = len( self.dirname )
-        
+
         if self.display_watched_files.get()=='Y':
             keyL = list(fileD.keys())
             keyL.sort()

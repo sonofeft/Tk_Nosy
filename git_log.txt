@@ -1,3 +1,9 @@
+commit 5c0fa68103437223361f68f2ae38e8213cf10e40
+Author: sonofeft <ctatsourceforge@gmail.com>
+Date:   Wed Aug 26 09:28:48 2015 -0700
+
+    minor doc corrections
+
 commit ebc21407dfb07d625b7827065e130c7fb463fe3e
 Author: sonofeft <ctatsourceforge@gmail.com>
 Date:   Wed Aug 26 09:23:55 2015 -0700

@@ -60,15 +60,15 @@ GET_NOSE_VERSION_CODE = """import sys;import nose;sys.stdout.write( nose.__versi
 
 def get_nose_version_info( python_full_exe_path ):
     """import nose in order to get the nose version number"""
-    
+
     cmdL = [python_full_exe_path, '-c', GET_NOSE_VERSION_CODE]
     #print( 'cmd =',cmd )
     proc = subprocess.Popen(cmdL, shell=False,
-                             stdin=subprocess.PIPE,
-                             stdout=subprocess.PIPE,
-                             stderr=subprocess.PIPE)
+                            stdin=subprocess.PIPE,
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
     nose_version, stderr_value = proc.communicate()
-    
+
     if nose_version:
         return  nose_version, None
     else:
@@ -78,7 +78,7 @@ class PyInterp(object):
     r"""PyInterp is a python executable interpreter on this file system.
 
     Attributes::
-    
+
         major: major version of python interpreter
         minor: minor version of python interpreter
         micro: micro version of python interpreter
@@ -135,16 +135,16 @@ GET_PY_VERSION_CODE = """import sys;"""+\
 
 def get_py_version_info( python_full_exe_path ):
     """import nose in order to get the nose version number"""
-    
+
     cmdL = [python_full_exe_path, '-c', GET_PY_VERSION_CODE]
     #print( 'cmd =',cmd )
     proc = subprocess.Popen(cmdL, shell=False,
-                             stdin=subprocess.PIPE,
-                             stdout=subprocess.PIPE,
-                             stderr=subprocess.PIPE)
+                            stdin=subprocess.PIPE,
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
     py_info, stderr_value = proc.communicate()
-    
-    
+
+
     if py_info:
         try:
             py_info = py_info.decode()
@@ -166,7 +166,7 @@ class PyInterpsOnSys(object):
     """PyInterpreters finds all python executable interpreters on this file system.
 
     Attributes::
-    
+
         interpL: list of PyInterp objects
         interp2L: list of python 2 PyInterp objects
         interp3L: list of python 3 PyInterp objects

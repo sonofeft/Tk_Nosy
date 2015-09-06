@@ -8,6 +8,7 @@ GitHub Log
 
 * Aug 26, 2015
     - (by: sonofeft) 
+        - minor doc corrections
         - Added HISTORY.rst
 * Aug 25, 2015
     - (by: sonofeft) 
