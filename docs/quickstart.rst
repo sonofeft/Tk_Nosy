@@ -2,7 +2,7 @@
 .. quickstart
 
 QuickStart
-=========
+==========
 
 Verify tkinter
 --------------
@@ -104,7 +104,7 @@ It is possible to run tk_nosy directly from source without installing it. Simply
 pip Error Messages
 ------------------
 
-If you get an error message that ``pip`` is not found, see `https://pip.pypa.io/en/latest/installing.html`_ for full description of pip installation.
+If you get an error message that ``pip`` is not found, see `<https://pip.pypa.io/en/latest/installing.html>`_ for full description of pip installation.
 
 I've sometimes had issues with pip failing on Linux with a message like::
 
