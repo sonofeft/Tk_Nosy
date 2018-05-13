@@ -6,6 +6,10 @@ History
 GitHub Log
 ----------
 
+* May 13, 2018
+    - (by: sonofeft) 
+        - Ran docs through spell-check plugin
+
 * Sep 06, 2015
     - (by: sonofeft) 
         - removed make_toctree from fulltoc.py
@@ -25,7 +29,7 @@ GitHub Log
     - (by: sonofeft) 
         - Fixed docs quickstart
         - Added quickstart to docs and setup tweeks
-            Made setup.py read the requirements.txt file for intall_requires list.
+            Made setup.py read the requirements.txt file for install_requires list.
             Also started a TODO list.
 * Aug 19, 2015
     - (by: sonofeft) 

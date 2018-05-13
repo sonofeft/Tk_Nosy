@@ -56,7 +56,7 @@ under certain conditions.
 __author__ = 'Charlie Taylor'
 __copyright__ = 'Copyright (c) 2013 Charlie Taylor'
 __license__ = 'GPL-3'  # see file LICENSE.TXT
-__version__ = '0.1.5'  # METADATA_RESET:__version__ = '<<version>>'
+__version__ = '0.1.6'  # METADATA_RESET:__version__ = '<<version>>'
 __email__ = "charlietaylor@users.sourceforge.net"
 __status__ = "Development"  # "Prototype", "Development", or "Production"
 
@@ -190,8 +190,13 @@ def run_nosetests(numNosyCalls, PI, display_test_details='Y'):
                 outputTextL.append( '\n'.join(sL) + '\n\n' )
             iText += 1
 
+    fOut = open('nosetests_details.txt','w')
+    fOut.write(''.join(outputTextL))
+    fOut.close()
+
     if (display_test_details=='N') and passedAllTests:
         outputTextL = ['Passed All Tests\n\n']
+    
     return passedAllTests, numPassed, numFailed, numErrors, numSkipped, outputTextL
 
 
@@ -547,7 +552,7 @@ class Tk_Nosy(object):
             self.menu_Run()
 
     def kill_popup_window(self, popup_name):
-        """Close a popup window running another verions of python interpreter"""
+        """Close a popup window running another versions of python interpreter"""
         for itup, tup in enumerate(Tk_Nosy.concurrent_versionL):
             PI, Popup = tup
             s = '%s %s' % (PI.exe_name, PI.version_str)

@@ -12,7 +12,7 @@ TDD is one approach to testing that has many devoted followers, and for good rea
 
 There are plenty of books about TDD and plenty of advanced topics to learn. Anyone interested in learning the smart patterns, tricks and rules of thumb that can make TDD better should certainly do so, but I think any common sense application of the simple TDD steps will result in cleaner, simpler code that just works and can be proven to work.
 
-A simple undestanding is all that's required to benefit from TDD.
+A simple understanding is all that's required to benefit from TDD.
 
 Developer TDD Methodology
 -------------------------
