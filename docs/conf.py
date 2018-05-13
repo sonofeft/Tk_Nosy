@@ -17,6 +17,9 @@ import sys
 import os
 import shlex
 
+IS_ON_RTD = os.environ.get('READTHEDOCS') == 'True'
+
+
 here = os.path.abspath(os.path.dirname(__file__)) # Needed to find fulltoc
 up_one = os.path.split( here )[0]# Needed to find tk_nosy development version
 if here not in sys.path[:2]:
@@ -38,19 +41,22 @@ if up_one not in sys.path[:2]:
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-spelling_ignore_pypi_package_names=True
-spelling_ignore_python_builtins=True
-spelling_show_suggestions=True
-spelling_word_list_filename='spelling_correct_wordlist.txt'
-
 extensions = [
-    'sphinxcontrib.spelling',
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.ifconfig',
     'fulltoc'
 ]
+
+if not IS_ON_RTD:
+    spelling_ignore_pypi_package_names=True
+    spelling_ignore_python_builtins=True
+    spelling_show_suggestions=True
+    spelling_word_list_filename='spelling_correct_wordlist.txt'
+    extensions.append( 'sphinxcontrib.spelling' )
+
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
