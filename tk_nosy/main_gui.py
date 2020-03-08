@@ -68,6 +68,8 @@ __status__ = "Development"  # "Prototype", "Development", or "Production"
 fileD = {} # key=file name, value=(size, modified time)
 changedFileL = []
 
+print( 'Running Tk_Nosy at:', __file__ )
+
 def walkLocate(pattern, topDir=os.curdir):
     """Locate all files matching supplied filename pattern in and below
     supplied topDir directory."""
@@ -121,6 +123,10 @@ def run_nosetests(numNosyCalls, PI, display_test_details='Y'):
                   to run nosetests with
        :type PI: object
     """
+    
+    if os.path.isfile(os.path.join( os.getcwd(), '.coverage' )):
+        print('Deleting old .coverage file:', os.path.join( os.getcwd(), '.coverage' ) )
+        os.remove( os.path.join( os.getcwd(), '.coverage' ) )
 
     #print("Path at terminal when executing this file")
     #print("    " + os.getcwd() + "\n")
@@ -128,7 +134,8 @@ def run_nosetests(numNosyCalls, PI, display_test_details='Y'):
     xml_filename = 'nosetests_%s.xml'%PI.name().replace(' ','')
     #os.system (full_nosetests_name + ' --with-xunit  --xunit-file=%s'%xml_filename)
 
-    code = """import sys;from nose import run_exit;sys.exit(run_exit(argv=[ '', '--with-xunit', '--xunit-file=%s']))"""%xml_filename
+    #code = """import sys;from nose import run_exit;sys.exit(run_exit(argv=[ '', '--with-xunit', '--xunit-file=%s']))"""%xml_filename
+    code = """import sys;from nose import run_exit;sys.exit(run_exit(argv=[ '', '--with-xunit', '--xunit-file=%s', '--with-coverage', '--cover-html']))"""%xml_filename
 
     cmd = '''%s -c "%s"'''%(PI.full_path, code)
 

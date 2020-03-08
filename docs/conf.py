@@ -49,6 +49,9 @@ extensions = [
     'fulltoc'
 ]
 
+# maybe use:
+# try:
+#     import sphinxcontrib.spelling # if it fails on RTD or local, all is good.
 if not IS_ON_RTD:
     spelling_ignore_pypi_package_names=True
     spelling_ignore_python_builtins=True

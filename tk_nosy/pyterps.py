@@ -190,9 +190,13 @@ class PyInterpsOnSys(object):
 
         # look for python in standard places
         if platform.system() == "Windows":
-            dir_a_L = glob.glob(r"C:\Anaconda\python.exe")
+            dir_a_L = glob.glob(r"D:\Anaconda?\python.exe")
+            dir_d_L = glob.glob(r"D:\Python??\python.exe")
+            dir_d64_L = glob.glob(r"D:\Python??_64\python.exe")
             dirL = glob.glob(r"C:\Python??\python.exe")
             dirL.extend( dir_a_L )
+            dirL.extend( dir_d_L )
+            dirL.extend( dir_d64_L )
         else:
             dirL = glob.glob('/usr/bin/python*')
         for pydir in dirL:
